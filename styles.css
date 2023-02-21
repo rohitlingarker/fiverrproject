@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(5, 5, 44);
+}
+section{
+    min-height: 100vh;
+    position:relative;
+}
+#sec1{
+    /* background-image: url('downloads/Billeder/Mano despencer 13935702.jpg'); */
+    /* display: flex;
+    justify-content: center; */
+    max-height: 140vh;
+    overflow: hidden;
+}
+#sec1 img{
+    width: 100vw;
+    
+}
+#sec1 h1{
+    position: fixed;
+    left: 50%;
+    top: 50vh;
+    font-size: 8rem;
+    transform: translate(-50%,-50%);
+    color: #000;
+}
+
+#sec2{
+    /* background:linear-gradient(#151515,#252525); */
+    background-color: #000;
+    max-height: 140vh;
+    height: 140vh;
+}
+#sec2 p{
+    color: #aaa;
+    font-size: 2rem;
+    width: 50%;
+    float: right;
+    position: absolute;
+    max-width: 30%;
+    display: inline;
+    text-align: center;
+}
+
+#sec2_text1{
+    top: 8%;
+    right:10%;
+    line-height:2.5rem;    
+}
+#sec2_text2{
+    left: 10%;
+    top: 50%;
+}
+#sec2_text3{
+    right: 10%;
+    bottom: 10%;
+}
+
+
+
+
