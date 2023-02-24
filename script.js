@@ -1,7 +1,7 @@
 const sec1 =document.getElementById("sec1")
 const mainTitle = document.getElementById("mainTitle")
 //SCROLLMAGIC
-const textAnim = TweenMax.fromTo(mainTitle, 3, { opacity: 1,fontSize:150 }, { opacity: 0,fontSize:300 });
+const textAnim = TweenMax.fromTo(mainTitle, 3, { opacity: 1,fontSize:150}, { opacity: 0,fontSize:300,display:"none"});
 const controller = new ScrollMagic.Controller();
 
 //Text Animation
@@ -11,7 +11,6 @@ let scene2 = new ScrollMagic.Scene({
   triggerElement: sec1,
   triggerHook: 0
 })
-    .addIndicators()
     .setTween(textAnim)
     .addTo(controller);
 
@@ -20,7 +19,6 @@ let scene3 = new ScrollMagic.Scene({
     triggerElement:scene2,
     triggerHook:0
 })
-.addIndicators()
 
 
 // create a timeline for the image animations
@@ -40,4 +38,3 @@ var scene = new ScrollMagic.Scene({
 .setPin("#sec2") // keep the trigger element pinned to the top of the screen while the scene is active
 .setTween(slideInImages) // set the timeline as the scene's animation
 .addTo(controller)
-.addIndicators();
