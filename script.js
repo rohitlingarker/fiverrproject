@@ -38,3 +38,38 @@ var scene = new ScrollMagic.Scene({
 .setPin("#sec2") // keep the trigger element pinned to the top of the screen while the scene is active
 .setTween(slideInImages) // set the timeline as the scene's animation
 .addTo(controller)
+
+// const sec9 = document.querySelector("#sec9")
+// const video = sec9.querySelector("video");
+
+
+
+// let scene9 = new ScrollMagic.Scene({
+//   duration: 2000,
+//   triggerElement: sec9,
+//   triggerHook: 0
+// })
+//   .addIndicators()
+//   .setPin(sec9)
+//   .addTo(controller);
+
+// let accelamount = 0.1;
+// let scrollpos = 0;
+// let delay = 0;
+
+// scene9.on("update", e => {
+//   scrollpos = e.scrollPos / 1000;
+// });
+
+// var curposition = 14
+
+// setInterval(() => {
+//   if (scrollpos < curposition){
+//     return
+//   }else{
+//   delay += (scrollpos -curposition - delay) * accelamount;
+//   console.log(scrollpos, delay);
+
+//   video.currentTime = scrollpos-curposition;
+//   }
+// }, 33.3);
